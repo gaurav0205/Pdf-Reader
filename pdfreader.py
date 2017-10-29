@@ -9,7 +9,10 @@ path = sys.argv[1]
 #matter = files.read()
 #print (matter)
 
+#Opens the file in read mode
 pdfFileObj = open(path, 'rb')
+
+#To read the pdf file
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 a=pdfReader.numPages
 print(a)
